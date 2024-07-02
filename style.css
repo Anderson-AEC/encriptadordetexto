@@ -1,83 +1,145 @@
+/* Configura o corpo da página */
 body {
+  /* Define uma imagem de fundo */
   background-image: url(img/imgFundo.png);
-    height: 100vh;
-    font-family: Arial, sans-serif;
-    margin: 20px;
-  }
-  
-  header {
-    background-color: #43da3e;
-    padding: 30px;
-    text-align: center;
-    font-size: 30px;
-  }
-  
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  .flex-container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  
-  .input-container {
-    flex: 1;
-    margin-right: 10px;
-  }
-  
-  textarea {
-    width: 100%;
-    height: 100px;
-    padding: 1px;
-    font-size: 16px;
-    border: 5px solid red;
-    border-radius: 5px;
-  }
-  
-  .botoes {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    
-  }
-  
-  button {
-    display: inline-block;
-    padding: 15px 25px;
-    font-size: 24px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: #fff;
-    background-color: #04AA6D;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
-  }
-  
-  button:hover {
-    background-color: #3e8e41;
-  }
+  /* Define a altura da página */
+  height: 100vh;
+  /* Define a fonte do texto */
+  font-family: Copperplate, Papyrus, fantasy ;
+  /* Define uma margem ao redor da página */
+  margin: 10%;
+}
 
-  button:active {
-    background-color: #3e8e41;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-  }
-  
-  #resultado {
-    flex: 1;
-    height: 100px;
-    padding: 1px;
-    font-size: 16px;
-    border: 5px solid blue;
-    border-radius: 5px;
-  }
-  
+/* Configura o cabeçalho da página */
+header {
+  /* Define a cor de fundo do cabeçalho */
+  background-color: rgb(170, 170, 50);
+  /* Adiciona um espaço dentro do cabeçalho */
+  padding: 30px;
+  /* Centraliza o texto no cabeçalho */
+  text-align: center;
+  /* Define o tamanho da fonte do texto no cabeçalho */
+  font-size: 36px;
+}
+
+/* Configura a parte principal da página */
+main {
+  /* Faz com que os itens dentro do main fiquem em coluna */
+  display: flex;
+  flex-direction: column;
+  /* Centraliza os itens no meio da página */
+  align-items: center;
+  /* Adiciona um espaço dentro do main */
+  padding: 20px;
+}
+
+/* Configura um contêiner flexível */
+.flex-container {
+  /* Faz com que os itens dentro do contêiner fiquem em linha */
+  display: flex;
+  /* Espaça os itens igualmente */
+  justify-content: space-between;
+  /* Define a largura do contêiner */
+  width: 100%;
+  /* Adiciona uma margem embaixo do contêiner */
+  margin-bottom: 10px;
+}
+
+/* Configura um contêiner de entrada */
+.input-container {
+  /* Faz com que o contêiner ocupe toda a largura disponível */
+  flex: 1;
+  /* Adiciona uma margem à direita */
+  margin-right: 10px;
+   /* Define uma margem ao redor */
+   margin: 1%;
+}
+
+/* Configura uma área de texto */
+textarea {
+  /* Define a cor de fundo */
+  background-color: rgb(246, 246, 177);
+  /* Define a largura da área de texto */
+  width: 100%;
+  /* Define a altura da área de texto */
+  height: 100px;
+  /* Adiciona um espaço interno */
+  padding: 1px;
+  /* Define o tamanho da fonte */
+  font-size: 16px;
+  /* Define a borda da área de texto */
+  border: 5px solid rgb(247, 142, 38);
+  /* Define os cantos arredondados */
+  border-radius: 5px;
+}
+
+/* Configura a área dos botões */
+.botoes {
+  /* Faz com que os botões fiquem centralizados */
+  display: flex;
+  justify-content: center;
+  /* Adiciona um espaço entre os botões */
+  gap: 10px;
+}
+
+/* Configura os botões */
+button {
+  /* Faz com que o botão apareça em linha */
+  display: inline-block;
+  /* Adiciona um espaço dentro do botão */
+  padding: 15px 25px;
+  /* Define o tamanho da fonte do botão */
+  font-size: 24px;
+  /* Faz com que o cursor mude ao passar sobre o botão */
+  cursor: pointer;
+  /* Centraliza o texto no botão */
+  text-align: center;
+  /* Remove o sublinhado do texto */
+  text-decoration: none;
+  /* Remove a borda ao redor do botão */
+  outline: none;
+  /* Define a cor do texto */
+  color: #fff;
+  /* Define a cor de fundo do botão */
+  background-color: #04AA6D;
+  /* Remove a borda padrão */
+  border: none;
+  /* Define os cantos arredondados */
+  border-radius: 15px;
+  /* Adiciona uma sombra ao botão */
+  box-shadow: 0 9px #999;
+}
+
+/* Configura a aparência do botão quando o mouse está sobre ele */
+button:hover {
+  /* Muda a cor de fundo do botão */
+  background-color: #3e8e41;
+}
+
+/* Configura a aparência do botão quando ele é pressionado */
+button:active {
+  /* Muda a cor de fundo do botão */
+  background-color: #3e8e41;
+  /* Muda a sombra do botão */
+  box-shadow: 0 5px #666;
+  /* Move o botão um pouco para baixo */
+  transform: translateY(4px);
+}
+
+/* Configura a caixa de resultado */
+#resultado {
+  /* Define a cor de fundo */
+  background-color: rgb(246, 246, 177);
+  /* Faz com que a caixa ocupe toda a largura disponível */
+  flex: 1;
+  /* Define a altura da caixa */
+  height: 100px;
+  /* Adiciona um espaço interno */
+  padding: 1px;
+  /* Define o tamanho da fonte */
+  font-size: 16px;
+  /* Define a borda da caixa */
+  border: 5px solid rgb(247, 142, 38);
+  /* Define os cantos arredondados */
+  border-radius: 5px;
+}
