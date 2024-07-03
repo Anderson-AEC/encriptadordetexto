@@ -1,3 +1,5 @@
+// Mostra a mensagem de aviso na tela.
+alert('Para um melhor funcionamento não use letras maisculas e caracteres especiais!');
 // Esta função faz algo quando apertamos um botão
 function executarAcao(tipo) {
     // Pega o que a pessoa escreveu e transforma tudo em letras pequenas

@@ -143,3 +143,23 @@ button:active {
   /* Define os cantos arredondados */
   border-radius: 5px;
 }
+footer {
+ /* Alinha o texto horizontalmente ao centro do elemento */
+text-align: center;
+/* Define um espaçamento interno de 1 pixel em todos os lados do elemento */
+padding: 1px;
+/* Define a cor do texto em um tom de vermelho usando o modelo RGB */
+color: rgb(232, 19, 19);
+/* Define a cor de fundo do elemento em um tom de laranja claro usando o modelo RGB */
+background-color: rgb(242, 192, 128);
+/* Define a família de fontes para o texto dentro do elemento, utilizando Arial, Helvetica ou sans-serif */
+font-family: Arial, Helvetica, sans-serif;
+/* Define o tamanho da fonte do texto como 12 pixels */
+font-size: 12px;
+/* Define a margem externa do elemento como 5% em todos os lados, relativa à largura do elemento pai */
+margin: 5%;
+/* Define a largura do elemento como 50% da largura do elemento pai */
+width: 50%;
+/* Alinha o texto horizontalmente ao centro do elemento (duplicado e desnecessário) */
+text-align: center;
+}
