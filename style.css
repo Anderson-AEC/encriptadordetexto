@@ -1,25 +1,19 @@
 /* Configura o corpo da página */
 body {
-  /* Define uma imagem de fundo */
-  background-image: url(img/imgFundo.png);
-  /* Define a altura da página */
-  height: 100vh;
-  /* Define a fonte do texto */
-  font-family: Copperplate, Papyrus, fantasy ;
-  /* Define uma margem ao redor da página */
-  margin: 10%;
+  background-image: url('img/imgfund.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Copperplate, Papyrus, fantasy;
+  margin: 3%;
+  color: #000000;
 }
-
 /* Configura o cabeçalho da página */
 header {
-  /* Define a cor de fundo do cabeçalho */
-  background-color: rgb(170, 170, 50);
-  /* Adiciona um espaço dentro do cabeçalho */
+  background-color: rgba(230, 230, 224, 0.2);
   padding: 30px;
-  /* Centraliza o texto no cabeçalho */
   text-align: center;
-  /* Define o tamanho da fonte do texto no cabeçalho */
   font-size: 36px;
+  position: relative;
 }
 
 /* Configura a parte principal da página */
@@ -58,7 +52,7 @@ main {
 /* Configura uma área de texto */
 textarea {
   /* Define a cor de fundo */
-  background-color: rgb(246, 246, 177);
+  background-color: rgb(215, 215, 210, 0.8);
   /* Define a largura da área de texto */
   width: 100%;
   /* Define a altura da área de texto */
@@ -68,7 +62,7 @@ textarea {
   /* Define o tamanho da fonte */
   font-size: 16px;
   /* Define a borda da área de texto */
-  border: 5px solid rgb(247, 142, 38);
+  border: 5px solid rgb(215, 215, 210);
   /* Define os cantos arredondados */
   border-radius: 5px;
 }
@@ -101,7 +95,7 @@ button {
   /* Define a cor do texto */
   color: #fff;
   /* Define a cor de fundo do botão */
-  background-color: #04AA6D;
+  background-color: #8aa89d;
   /* Remove a borda padrão */
   border: none;
   /* Define os cantos arredondados */
@@ -113,13 +107,13 @@ button {
 /* Configura a aparência do botão quando o mouse está sobre ele */
 button:hover {
   /* Muda a cor de fundo do botão */
-  background-color: #3e8e41;
+  background-color: #8aa89d;
 }
 
 /* Configura a aparência do botão quando ele é pressionado */
 button:active {
   /* Muda a cor de fundo do botão */
-  background-color: #3e8e41;
+  background-color: #8aa89d;
   /* Muda a sombra do botão */
   box-shadow: 0 5px #666;
   /* Move o botão um pouco para baixo */
@@ -129,7 +123,7 @@ button:active {
 /* Configura a caixa de resultado */
 #resultado {
   /* Define a cor de fundo */
-  background-color: rgb(246, 246, 177);
+  background-color: rgb(215, 215, 210, 0.8);
   /* Faz com que a caixa ocupe toda a largura disponível */
   flex: 1;
   /* Define a altura da caixa */
@@ -139,7 +133,7 @@ button:active {
   /* Define o tamanho da fonte */
   font-size: 16px;
   /* Define a borda da caixa */
-  border: 5px solid rgb(247, 142, 38);
+  border: 5px solid rgb(215, 215, 210);
   /* Define os cantos arredondados */
   border-radius: 5px;
 }
@@ -151,11 +145,11 @@ padding: 1px;
 /* Define a cor do texto em um tom de vermelho usando o modelo RGB */
 color: rgb(232, 19, 19);
 /* Define a cor de fundo do elemento em um tom de laranja claro usando o modelo RGB */
-background-color: rgb(242, 192, 128);
+background-color: rgba(213, 211, 208, 0.2);
 /* Define a família de fontes para o texto dentro do elemento, utilizando Arial, Helvetica ou sans-serif */
 font-family: Arial, Helvetica, sans-serif;
 /* Define o tamanho da fonte do texto como 12 pixels */
-font-size: 12px;
+font-size: 22px;
 /* Define a margem externa do elemento como 5% em todos os lados, relativa à largura do elemento pai */
 margin: 5%;
 /* Define a largura do elemento como 50% da largura do elemento pai */
