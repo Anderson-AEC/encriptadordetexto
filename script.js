@@ -1,62 +1,53 @@
 // Mostra a mensagem de aviso na tela.
-alert('Para um melhor funcionamento não use letras maisculas e caracteres especiais!');
-// Esta função faz algo quando apertamos um botão
+alert('Para um melhor funcionamento, não use letras maiúsculas e caracteres especiais!');
+
+// Esta função executa uma ação com base no tipo (criptografar ou descriptografar)
 function executarAcao(tipo) {
-    // Pega o que a pessoa escreveu e transforma tudo em letras pequenas
+    // Pega o texto digitado e converte para minúsculas
     const texto = document.getElementById('texto').value.toLowerCase();
     let resultado = '';
 
-    // Se o botão apertado for o de "criptografar"
+    // Verifica se há caracteres inválidos
+    if (/[A-Z!@#$%^&*()_+={}[\]:;"'<>,.?/\\|]/.test(texto)) {
+        alert('Texto contém caracteres inválidos. Use apenas letras minúsculas e caracteres válidos.');
+        return;
+    }
+
+    // Determina a ação com base no tipo (criptografar ou descriptografar)
     if (tipo === 'criptografar') {
-        // Chama uma função que vai transformar o texto de um jeito especial
         resultado = criptografarTexto(texto);
-    // Se o botão apertado for o de "descriptografar"
     } else if (tipo === 'descriptografar') {
-        // Chama uma função que vai transformar o texto de volta ao normal
         resultado = descriptografarTexto(texto);
     }
 
-    // Coloca o texto transformado na caixinha de resultado
+    // Exibe o resultado na área designada
     document.getElementById('resultado').value = resultado;
 }
 
-// Esta função transforma o texto de um jeito especial, trocando letras por palavras
+// Função para criptografar o texto substituindo letras por palavras específicas
 function criptografarTexto(texto) {
     return texto
-        // Troca 'e' por 'enter'
         .replace(/e/g, 'enter')
-        // Troca 'i' por 'imes'
         .replace(/i/g, 'imes')
-        // Troca 'a' por 'ai'
         .replace(/a/g, 'ai')
-        // Troca 'o' por 'ober'
         .replace(/o/g, 'ober')
-        // Troca 'u' por 'ufat'
         .replace(/u/g, 'ufat');
 }
 
-// Esta função transforma o texto de volta ao normal
+// Função para descriptografar o texto revertendo as substituições
 function descriptografarTexto(texto) {
     return texto
-        // Troca 'enter' por 'e'
         .replace(/enter/g, 'e')
-        // Troca 'imes' por 'i'
         .replace(/imes/g, 'i')
-        // Troca 'ai' por 'a'
         .replace(/ai/g, 'a')
-        // Troca 'ober' por 'o'
         .replace(/ober/g, 'o')
-        // Troca 'ufat' por 'u'
         .replace(/ufat/g, 'u');
 }
 
-// Esta função copia o texto do resultado para a área de transferência
+// Função para copiar o resultado para a área de transferência
 function copiarResultado() {
-    // Pega o texto da caixinha de resultado
     const resultado = document.getElementById('resultado');
     resultado.select();
-    // Copia o texto selecionado
     document.execCommand('copy');
-    // Mostra uma mensagem dizendo que o texto foi copiado
     alert('Resultado copiado para a área de transferência!');
 }

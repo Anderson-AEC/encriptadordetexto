@@ -1,56 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <!-- Inicia o cabeçalho do documento -->
     <meta charset="UTF-8">
-    <!-- Configura o documento para se ajustar a diferentes tamanhos de tela -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- Define o imagem favicon da página que aparece na aba do navegador -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <!-- Define o título da página que aparece na aba do navegador -->
     <title>Criptografia de Textos</title>
-    <!-- Linka o arquivo de estilos CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Inicia o corpo do documento -->
-
     <header>
-        <!-- Cabeçalho da página -->
         <h1>Criptografia de Textos</h1>
-        <!-- Título da página -->
     </header>
     <main>
-        <!-- Parte principal da página -->
-
         <section class="flex-container">
-            <!-- Contêiner flexível que contém duas áreas de texto -->
             <div class="input-container">
-                <!-- Primeiro contêiner de entrada -->
                 <textarea id="texto" placeholder="Insira o texto para criptografar ou descriptografar"></textarea>
-                <!-- Área de texto onde o usuário insere o texto -->
             </div>
             <div class="input-container">
-                <!-- Segundo contêiner de entrada -->
                 <textarea id="resultado" placeholder="Resultado aparecerá aqui" readonly></textarea>
-                <!-- Área de texto onde o resultado aparece, mas o usuário não pode editar -->
             </div>
         </section>
         <section class="botoes">
-            <!-- Seção dos botões -->
             <button id="criptografar-btn" onclick="executarAcao('criptografar')">Criptografar</button>
-            <!-- Botão para criptografar o texto -->
             <button id="descriptografar-btn" onclick="executarAcao('descriptografar')">Descriptografar</button>
-            <!-- Botão para descriptografar o texto -->
             <button id="copiar-btn" onclick="copiarResultado()">Copiar Resultado</button>
-            <!-- Botão para copiar o resultado -->
         </section>
         <footer>
-            <p><strong>Author: Anderson da Silva Gomes <br>04/07/2024</strong><br></p>
-            <a href="https://www.linkedin.com/in/anderson-da-silva-gomes/">linkdin</a>
-          </footer>
+            <p><strong>Autor: Anderson da Silva Gomes <br>04/07/2024</strong><br></p>
+            <a class="botaoLinkedin" href="https://www.linkedin.com/in/anderson-da-silva-gomes/">LinkedIn</a>
+        </footer>
     </main>
-    <!-- Linka o arquivo de script JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
